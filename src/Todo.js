@@ -54,7 +54,7 @@ const Todo = () => {
     }
     const handleSignOut = ()=>{
         auth.signOut().then(()=>{
-            navigate("/")
+            navigate("/ToDoApp")
         }).catch((err)=>{
             alert(err.message);
         })

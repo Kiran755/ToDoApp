@@ -11,7 +11,7 @@ function App() {
     return (
     <div className="App">
         <Routes>
-          <Route path="/" element={<SplashScreen/>}/>
+          <Route path="/ToDoApp" element={<SplashScreen/>}/>
           <Route path="/welcome" element={<Welcome/>}/>
           <Route path="/mainPage" element={<Todo/>}/>
         </Routes>

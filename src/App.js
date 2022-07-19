@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Todo from './Todo';
+import {
+  Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Welcome from './Welcome';
+import SplashScreen from './SplashScreen';
 function App() {
-  return (
+    return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Routes>
+          <Route path="/" element={<SplashScreen/>}/>
+          <Route path="/welcome" element={<Welcome/>}/>
+          <Route path="/mainPage" element={<Todo/>}/>
+        </Routes>
     </div>
   );
 }
